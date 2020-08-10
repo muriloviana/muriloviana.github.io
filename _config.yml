@@ -1,4 +1,19 @@
-title: Murilo Viana
-description: Software engineer, pythonista, soccer fan and cinema lover.
+title: muriloviana.dev
+description: Personal blog to share some knowledge and experiences about software development.
+url: https://muriloviana.dev
 
-theme: jekyll-theme-cayman
+remote_theme: jekyll/minima
+permalink: /posts/:slug/
+timezone: America/SaoPaulo
+markdown: kramdown
+
+# Social media
+minima:
+  social_links:
+    twitter: murilovmo
+    github: muriloviana
+    linkedin: muriloviana
+
+# Pagination
+paginate: 5
+paginate_path: /page/:num/
