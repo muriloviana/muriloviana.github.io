@@ -7,7 +7,7 @@ date: 2020-08-09 14:00 -0300
 
 Junto com meus colegas de time, em grande parte do tempo trabalhamos na criação de aplicações serverless. Ou seja, aplicações que precisam ter uma alta disponibilidade além de serem extremamente escaláveis.
 
-Logo no princípio decidimos utilziar o [DynamoDB](https://aws.amazon.com/dynamodb/?nc2=h_ql_prod_db_ddb){:target="_blank"} para todas as aplicações que seguissem este modelo serverless. Pensamos que seria interessante ter uma única ferramenta de banco de dados para todas as aplicações a fim diminuir a curva de aprendizado do time. Apesar de ser uma ferramenta bem interessante, assim como nenhuma outra ferramenta ou tecnologia, ela não é uma bala de prata que solucionará todos os seus problemas.
+Logo no princípio decidimos utilziar o [DynamoDB](https://aws.amazon.com/dynamodb/?nc2=h_ql_prod_db_ddb){:target="_blank"} para todas as aplicações que seguissem este modelo serverless. Pensamos que seria interessante ter uma única ferramenta de banco de dados para todas as aplicações a fim diminuir a curva de aprendizado do time. Apesar de ser uma ferramenta bem interessante, ela não é uma bala de prata que solucionará todos os seus problemas, assim como nenhuma outra ferramenta ou tecnologia.
 
 Dito isso, venho compartilhar com você algumas experiências e aprendizados obtidos no dia que decidimos discutir sobre *"quais aplicações fazem sentido, ou não, utilizar DynamoDB"*.
 
@@ -45,6 +45,6 @@ Com todas essas cartas na mesa, decidimos não utilizar o DynamoDB para está ap
 
 ### Conclusão
 
-DynamoDB é uma ferramenta muito poderosa e não tem tantos recursos extras como outros bancos de dados. Porém, acredito que ele não tenha esses recursos extamente para focar em simplicidade e escalabilidade. É realmente impressionante como ele escala bem e com praticamente nada de configuração. Mas fique sempre atento ao uso de recursos, as queries precisam estar otimizadas para valer a pena utilizá-lo. Nunca esqueça de que não é possível realizar algumas queries tradicionais do SQL, como por exemplo search com texto livre e ad-hoc queries, pois isso pode te custar uma alta fatura na AWS.
+DynamoDB é uma ferramenta muito poderosa e não tem tantos recursos extras como outros bancos de dados. No entanto, acredito que ele não tenha esses recursos extamente para focar em simplicidade e escalabilidade. É realmente impressionante como ele escala bem e com praticamente nada de configuração. Mas fique sempre atento ao uso de recursos, as queries precisam estar otimizadas para valer a pena utilizá-lo. Nunca esqueça de que não é possível realizar algumas queries tradicionais do SQL, como por exemplo search com texto livre e ad-hoc queries, pois isso pode te custar uma alta fatura na AWS.
 
 **Inspirado após a leitura do post: <https://medium.com/better-programming/5-real-life-use-cases-for-dynamodb-a152a9d152e2>**
