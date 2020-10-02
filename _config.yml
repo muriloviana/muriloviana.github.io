@@ -1,6 +1,6 @@
-title: muriloviana.dev
-description: Personal blog to share some knowledge and experiences about software development.
-url: https://muriloviana.dev
+title: muriloviana.me
+description: Personal blog to share some thoughts, knowledge and experiences.
+url: https://muriloviana.me
 
 remote_theme: jekyll/minima
 permalink: /posts/:slug/
