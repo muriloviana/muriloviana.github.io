@@ -3,6 +3,7 @@ layout: post
 title: O dia que descobri quando devo utilizar, ou não, DynamoDB
 slug: o-dia-que-descobri-quando-devo-utilizar-ou-nao-dynamodb
 date: 2020-08-09 14:00 -0300
+comments: true
 ---
 
 Junto com meus colegas de time, em grande parte do tempo trabalhamos na criação de aplicações serverless. Ou seja, aplicações que precisam ter uma alta disponibilidade além de serem extremamente escaláveis.

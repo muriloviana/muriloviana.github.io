@@ -7,6 +7,10 @@ permalink: /posts/:slug/
 timezone: America/SaoPaulo
 markdown: kramdown
 
+# Disqus
+disqus:
+    shortname: https-muriloviana-me
+
 # Social media
 minima:
   social_links:
