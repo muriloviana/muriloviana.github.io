@@ -11,6 +11,9 @@ markdown: kramdown
 disqus:
     shortname: https-muriloviana-me
 
+# Google Analytics
+google_analytics: G-EVQJBVSCW5
+
 # Social media
 minima:
   social_links:
