@@ -3,7 +3,7 @@ layout: post
 title: O dia que descobri quando devo utilizar, ou não, DynamoDB
 slug: o-dia-que-descobri-quando-devo-utilizar-ou-nao-dynamodb
 date: 2020-08-09 14:00 -0300
-comments: true
+categories: [AWS, DynamoDB]
 ---
 
 Junto com meus colegas de time, em grande parte do tempo trabalhamos na criação de aplicações serverless. Ou seja, aplicações que precisam ter uma alta disponibilidade além de serem extremamente escaláveis.
@@ -12,13 +12,13 @@ Logo no princípio decidimos utilziar o [DynamoDB](https://aws.amazon.com/dynamo
 
 Dito isso, venho compartilhar com você algumas experiências e aprendizados obtidos no dia que decidimos discutir sobre *"quais aplicações fazem sentido, ou não, utilizar DynamoDB"*.
 
-### O que é DynamoDB, de forma resumida
+## O que é DynamoDB, de forma resumida
 
 DynamoDB é um serviço de banco de dados NoSQL disponibilizado pela AWS (Amazon Web Services) que fornece uma rápida e previsível performance de escalabilidade. Com essa ferramenta você não precisa se preocupar com provisionamento de hardware, instalação, configuração, replicação ou escalonamento de cluster para escalar seu banco de dados.
 
 Os principais componentes do DynamoDB são as tabelas, itens e atributos. De forma simplória, uma tabela contém uma coleção de itens e cada item contém uma coleção de atributos. O DynamoDB usa chaves primárias para identificar exclusivamente cada item em uma tabela e índices secundários para fornecer mais flexibilidade de consulta.
 
-### Nossa primeira aplicação usando DynamoDB
+## Nossa primeira aplicação usando DynamoDB
 
 Nossa primeira aplicação tinha uma função, tokenizar cartões de crédito. Basicamente ela receberia dados sensíveis dos nossos clientes e converteria em um código identificador digital exclusivo, aleatório e temporário para que fosse utilizado de forma segura. Ou seja, precisávamos de um banco de dados capaz de receber diversas queries de escrita, com baixo tempo de resposta, criptografia nativa dos dados confidenciais e fácil escalabilidade sem dor de cabeça. E o DynamoDB é capaz de fazer tudo isso. Tinha apenas um detalhe que nos encomodava, como o DynamoDB trabalha.
 
@@ -32,7 +32,7 @@ Legal, diferente, mas isso vai ficar meio estranho na hora de desenvolver nossa 
 
 Com todas as ferramentas e tecnologias em mãos, criamos nossa primeira aplicação utilizando DynamoDB e funcionou perfeitamente. Tudo muito seguro, simples, rápido e escalável. Foi então que veio a necessidade de criar uma outra aplicação, uma API REST, e assim as coisas começaram a mudar.
 
-### Queries complexas e o começo dos questionamentos
+## Queries complexas e o começo dos questionamentos
 
 As primeiras versões dessa nova aplicação foram tranquilas, até o momento que surgiu a necessidade de fazer queries cada vez mais complexas. O primeiro problema identificado foi a modelagem das tabelas. Como o time tinha pouca experiência com NoSQL, muitas tabelas haviam sido criadas com um pensamento de banco de dados relacional. Devido ao projeto ainda não ter nenhuma versão em produção, decidimos então fazer uma reestruturação nesses modelos seguindo o [design NoSQL](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/bp-general-nosql-design.html){:target="_blank"}.
 
@@ -44,8 +44,9 @@ Com todas essas cartas na mesa, decidimos não utilizar o DynamoDB para está ap
 
 ![Exodia](https://media.giphy.com/media/Snd51fjjX6s0M/giphy.gif)
 
-### Conclusão
+## Conclusão
 
 DynamoDB é uma ferramenta muito poderosa e não tem tantos recursos extras como outros bancos de dados. No entanto, acredito que ele não tenha esses recursos extamente para focar em simplicidade e escalabilidade. É realmente impressionante como ele escala bem e com praticamente nada de configuração. Mas fique sempre atento ao uso de recursos, as queries precisam estar otimizadas para valer a pena utilizá-lo. Nunca esqueça de que não é possível realizar algumas queries tradicionais do SQL, como por exemplo search com texto livre e ad-hoc queries, pois isso pode te custar uma alta fatura na AWS.
 
-**Inspirado após a leitura do post: <https://medium.com/better-programming/5-real-life-use-cases-for-dynamodb-a152a9d152e2>**
+__Fonte de inspiração:__
+* [5 Use Cases for DynamoDB](https://medium.com/better-programming/5-real-life-use-cases-for-dynamodb-a152a9d152e2){:target="_blank"}

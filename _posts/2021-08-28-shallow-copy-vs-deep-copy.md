@@ -3,7 +3,7 @@ layout: post
 title: Shallow copy vs Deep copy
 slug: shallow-copy-vs-deep-copy
 date: 2021-08-28 11:00 -0300
-comments: true
+categories: Python
 ---
 
 Em Python, temos dois tipos de objetos ou coleções (objects or collections), os mutáveis e os imutáveis. Dito isto, quando precisamos fazer uma cópia de algo imutável, basta realizarmos uma nova atribuição. Por exemplo:
@@ -143,5 +143,5 @@ False
 Quando quisermos realizar uma cópia em todos os níveis do objeto de origem, incluindo possíveis objetos filhos, utilizamos o _deep copy_. E quando quisermos realizar uma cópia apenas do nível atual do objeto de origem, alterando apenas a referência de memória do objeto pai e mantendo a referência de memória dos objetos filhos, utilizamos o _shallow copy_.
 
 __Fontes de inspiração:__
-* [Python docs: shallow vs deep copy](https://docs.python.org/3/library/copy.html#shallow-vs-deep-copy){:target="_blank"}
-* [Real python: copying python objects](https://realpython.com/copying-python-objects/){:target="_blank"}
+* [Python Docs: shallow vs deep copy](https://docs.python.org/3/library/copy.html#shallow-vs-deep-copy){:target="_blank"}
+* [Real Python: copying python objects](https://realpython.com/copying-python-objects/){:target="_blank"}
