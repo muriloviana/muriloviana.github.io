@@ -86,7 +86,7 @@ Até o momento, tudo certo. Fizemos uma cópia da matrix original e de fato ela 
 
 ```
 
-Perfeito, a matriz original mateve-se intacta ao modificarmos sua cópia. No entanto, o que aconteceria se alterássemos uma das listas filhas? Por exemplo, se modificarmos o segundo elemento da primeira lista da matriz de `2` para `0`.
+Perfeito, a matriz original manteve-se intacta ao modificarmos sua cópia. No entanto, o que aconteceria se alterássemos uma das listas filhas? Por exemplo, se modificarmos o segundo elemento da primeira lista da matriz de `2` para `0`.
 
 ```python
 >>> copy_matrix[0][1] = 0
