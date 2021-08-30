@@ -41,7 +41,7 @@ Ok, o que temos até o momento? Temos um container, em execução no atual momen
 $ docker commit -c 'CMD ["redis-server"]' b6f2056808f1
 ```
 
-O outuput será algo semelhante a:
+O output será algo semelhante a:
 
 ```bash
 sha256:ad8437cf7924d7c2e831ae1f560ee61695e75bcbfbd687beb10891aa9b10a34c
