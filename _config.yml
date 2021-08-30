@@ -7,10 +7,6 @@ permalink: /posts/:slug/
 timezone: America/SaoPaulo
 markdown: kramdown
 
-# Disqus
-disqus:
-    shortname: https-muriloviana-me
-
 # Google Analytics
 google_analytics: G-EVQJBVSCW5
 
