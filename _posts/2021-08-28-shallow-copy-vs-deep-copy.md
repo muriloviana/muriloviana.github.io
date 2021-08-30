@@ -22,7 +22,7 @@ Bem tranquilo, concorda? No entanto, isto não se aplica a objetos ou coleções
 
 ```python
 >>> original_list = [1, 2, 3]
->>> copy_list = my_list
+>>> copy_list = original_list
 >>> copy_list.append(4)
 >>> print(copy_list)
 [1, 2, 3, 4]
@@ -32,9 +32,9 @@ Bem tranquilo, concorda? No entanto, isto não se aplica a objetos ou coleções
 True
 ```
 
-Isto acontece pois, em Python, não criamos uma cópia do objeto e sim vinculamos um nome de váriavel a uma alocação de memória, no caso, ao mesmo registro de memória.
+Isto acontece pois, em Python, não criamos uma cópia do objeto e sim vinculamos um nome de váriavel a uma alocação de memória, no caso, as duas listas apontam para o mesmo registro de memória.
 
-Sendo assim, quando se trata de algo mútavel e temos a necessidade de gerar uma cópia de forma que uma não altere o outro, temos duas opções: podemos fazer uma "cópia rasa" ou uma "cópia profunda" do objeto ou coleção de origem. Em Python, estas cópias são conhecidas, respectivamente, como _shallow copy_ e _deep copy_, na própria documentação da linguagem tem uma explicação da diferença entre elas:
+Sendo assim, quando se trata de algo mútavel e temos a necessidade de gerar uma cópia de forma que uma não altere a outra, temos duas opções: podemos fazer uma "cópia rasa" ou uma "cópia profunda" do objeto ou coleção de origem. Em Python, estas cópias são conhecidas, respectivamente, como _shallow copy_ e _deep copy_, na própria documentação da linguagem tem uma explicação da diferença entre elas:
 
 > -   Um _shallow copy_ constrói um novo objeto composto e então (na medida do possível) insere nele _referências_ aos objetos encontrados no original.
 > -   Um _deep copy_ constrói um novo objeto composto e então, recursivamente, insere nele _cópias_ dos objetos encontrados no original.
@@ -96,7 +96,7 @@ Perfeito, a matriz original manteve-se intacta ao modificarmos sua cópia. No en
 [[1, 0], [3, 4]]
 ```
 
-Ops, o segundo elemento da primeira lista tanto da cópia quanto da matriz original foram alteradas. Isto aconteceu pois fizemos um _shallow copy_, ou seja, apenas a lista pai, que engloba as outras listas da representação da matriz, foi copiada. Enquanto as listas filhas, que representam as linhas da matriz, continuam sendo referenciadas para o mesmo registro de memória da matriz original.
+Ops, o segundo elemento da primeira lista tanto da cópia quanto da matriz original foram alterados. Isto aconteceu pois fizemos um _shallow copy_, ou seja, apenas a lista pai, que engloba as outras listas da representação da matriz, foi copiada. Enquanto as listas filhas, que representam as linhas da matriz, continuam sendo referenciadas para o mesmo registro de memória da matriz original.
 
 ```python
 >>> id(original_matrix) == id(copy_matrix)
@@ -127,7 +127,7 @@ Matriz copiada, iremos repetir a ação que anteriormente não resultou no compo
 [[1, 2], [3, 4]]
 ```
 
-Uhull! Agora obtivemos o resultado esperado, pois a matriz original foi alocada em novo registro de memória, tanto para a lista pai quanto para as listas filhas.
+Uhull! Agora obtivemos o resultado esperado, pois a matriz original foi alocada em um novo registro de memória, tanto para a lista pai quanto para as listas filhas.
 
 ```python
 >>> id(original_matrix) == id(copy_matrix)
