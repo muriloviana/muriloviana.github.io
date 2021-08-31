@@ -2,7 +2,7 @@
 layout: post
 title: Como criar uma imagem docker através de um container
 slug: como-criar-uma-imagem-docker-atraves-de-um-container
-date: 2021-08-29 19:20 -0300
+date: 2021-08-30 19:20 -0300
 categories: Docker
 ---
 
@@ -33,7 +33,7 @@ CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS          PORTS     NA
 b6f2056808f1   alpine    "sh"      21 seconds ago   Up 21 seconds             priceless_wiles
 ```
 
-## Tudo no Docker é uma imagem
+## Docker commit
 
 Ok, o que temos até o momento? Temos um container, em execução no atual momento, com Redis instalado nele. Nesta mesma aba, ou janela, do terminal que acabamos de rodar o `docker ps`, iremos copiar o ID do container em execução e rodaremos o servidor do Redis nele.
 
@@ -47,8 +47,8 @@ O output será algo semelhante a:
 sha256:ad8437cf7924d7c2e831ae1f560ee61695e75bcbfbd687beb10891aa9b10a34c
 ```
 
-Este ID gigante é o resultado do comando `docker commit` que acabamos de rodar, e este é o pulo do gato. No Docker, tudo acaba virando uma imagem. Ou seja, esse ID nada mais é que a nossa imagem, a qual, tem o comando para executar o servidor do Redis. Portanto, agora basta gerarmos um novo container com esta nova imagem utilizando o comando: `docker run <IMAGEM_ID>` e vualá. Agora temos uma imagem gerada através de um container.
+Este é o pulo do gato! O comando `docker commit` nos permite salvar o estado atual de um container, em execução, em uma imagem. Logo, este ID gigante que obtivemos no passo anterior, nada mais é, que o identificador de uma imagem Docker. Se executarmos o comando `docker image ls`, para listar as imagens salvas no seu computador, veremos este mesmo ID entre elas. Desta forma, podemos gerar um novo container com base nesta nova imagem criada através do comando: `docker run <IMAGEM_ID>`.
 
 ## Conclusão
 
-Iremos sempre utilizar esta abordagem para criar novas imagens? Com certeza não rs. Todavia, isto nos ajuda a entender melhor o que são e como funcionam as imagens Docker, e assim, podemos tirar proveito delas em certas situações.
+Provavelmente, serão raros os casos que precisaremos gerar uma nova imagem através do comando `docker commit`. Todavia, é sempre bem-vindo conhechermos as ferramentas que usamos no nosso dia-a-dia, para quando a necessidade surgir estarmos preparados.
