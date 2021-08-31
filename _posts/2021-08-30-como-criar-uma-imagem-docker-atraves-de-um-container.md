@@ -35,7 +35,7 @@ b6f2056808f1   alpine    "sh"      21 seconds ago   Up 21 seconds             pr
 
 ## Docker commit
 
-Ok, o que temos até o momento? Temos um container, em execução no atual momento, com Redis instalado nele. Nesta mesma aba, ou janela, do terminal que acabamos de rodar o `docker ps`, iremos copiar o ID do container em execução e rodaremos o servidor do Redis nele.
+Ok, o que temos até o momento? Temos um container rodando no atual momento com o Redis instalado nele. Nesta mesma aba, ou janela, do terminal que acabamos de rodar o `docker ps`, iremos copiar o ID do container em execução e iniciaremos o servidor do Redis através do comando _CMD_ neste mesmo container.
 
 ```bash
 $ docker commit -c 'CMD ["redis-server"]' b6f2056808f1
