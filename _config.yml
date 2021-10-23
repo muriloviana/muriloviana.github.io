@@ -1,5 +1,5 @@
 title: muriloviana.me
-description: Personal blog to share some thoughts, knowledge and experiences.
+description: Blog pessoal para compartilhar aprendizados, conhecimentos e pensamentos
 url: https://muriloviana.me
 
 remote_theme: jekyll/minima
@@ -12,6 +12,7 @@ google_analytics: G-EVQJBVSCW5
 
 # Social media
 minima:
+  skin: dark
   social_links:
     twitter: muuviana
     github: muriloviana
