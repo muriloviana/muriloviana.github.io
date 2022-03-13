@@ -14,9 +14,10 @@ google_analytics: G-EVQJBVSCW5
 minima:
   skin: dark
   social_links:
-    twitter: muuviana
     github: muriloviana
     linkedin: muriloviana
+    twitter: muuviana
+    instagram: muuviana
 
 # Pagination
 paginate: 5
