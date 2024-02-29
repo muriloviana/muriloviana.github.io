@@ -32,7 +32,7 @@ A jornada de uma pessoa desenvolvedora é marcada não só pelo código que escr
 
 __Exemplo prático:__ Participe de comunidades locais de desenvolvedores, seja através de meetups, conferências ou grupos de tecnologia específicos, é uma maneira muito valiosa de aprender com outras pessoas da área além de construir sua rede profissional.
 
-## Escreva código regularmente
+## Escreva Código Regularmente
 
 Essa é uma dica de ouro: escreva código. E depois, escreva mais código. A teoria sem prática é como um carro sem combustível, você sabe para onde quer ir, mas não consegue chegar lá. Por isso, praticar constantemente é o que transforma conhecimento bruto em habilidade refinada, permitindo-lhe não apenas entender, mas também aplicar efetivamente os conhecimentos aprendidos.
 
@@ -52,6 +52,6 @@ __Exemplo prático:__ quando aprender uma nova biblioteca ou framework, reserve 
 
 Importante lembrar que a tecnologia está em constante evolução, e aquilo que é padrão hoje pode ser substituído amanhã. No entanto, os princípios fundamentais frequentemente permanecem relevantes. Ao nutrir sua curiosidade e buscar entender os "porquês" e "comos", você não só se adapta mais facilmente às mudanças, mas também se destaca como uma pessoa desenvolvedora que traz valor para qualquer equipe ou projeto.
 
-### Aproveite a jornada
+### Aproveite a Jornada
 
 Cada pessoa começou em algum lugar, e cada desafio é uma oportunidade de crescer. Essas cinco dicas são apenas o começo, porém fundamentais para estabelecer uma base sólida na sua carreira. Então, continue aprendendo, seja uma pessoa curiosa e, se possivel, compartilhe suas experiências e aprendizados com a comunidade. Talvez você seja a inspiração que outras pessoas estejam procurando!
