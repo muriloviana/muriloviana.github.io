@@ -6,7 +6,11 @@ date: 2024-02-29 09:36 -0300
 categories: Carreira
 ---
 
-Bem-vindo ao mundo do desenvolvimento de software! Se você deu os primeiros passos nessa incrível jornada, já deve ter percebido que há muito a aprender. Mas não tema! Estou aqui para te dar __5 dicas que eu gostaria de ter recebido quando era uma pessoa desenvolvedora Junior__ e que te ajudarão nessa jornada. Vamos nessa?
+[English version](https://dev.to/muuviana/5-tips-i-wish-i-had-received-when-i-was-a-junior-developer-4eab)
+
+Bem-vindo ao mundo do desenvolvimento de software! Se você deu os primeiros passos nessa incrível jornada, já deve ter percebido que há muito a aprender. Mas não tema! Estou aqui para te dar __5 dicas que eu gostaria de ter recebido quando era uma pessoa desenvolvedora Junior__ e que te ajudarão nessa jornada.
+
+Este é o primeiro de três posts que farei como uma forma de retribuição por todos aprendizados que a comunidade de tecnologia me proporcionou durante mais de 10 anos de carreira. Então, sem mias delongas, vamos lá!
 
 ## Versionamento de Código
 
