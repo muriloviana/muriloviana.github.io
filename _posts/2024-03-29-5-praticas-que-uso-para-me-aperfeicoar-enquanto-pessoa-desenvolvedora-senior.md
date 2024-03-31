@@ -6,6 +6,8 @@ date: 2024-03-29 20:02 -0300
 categories: Carreira
 ---
 
+![5 Práticas que uso para me aperfeiçoar enquanto pessoa desenvolvedora Sênior](/assets/5-practices-senior.jpg)
+
 Após anos trabalhando na área de desenvolvimento de software, alcancei a famosa posição de pessoa desenvolvedora Sênior. Não foi um caminho fácil nem rápido, porém para te auxiliar até lá, compartilhei algumas dicas que gostaria de ter recebido durante minha trajetória:
 
 - [5 dicas que gostaria de ter recebido quando era uma pessoa desenvolvedora Junior](https://muriloviana.me/posts/5-dicas-que-gostaria-de-ter-recebido-quando-era-uma-pessoa-desenvolvedora-junior/)
