@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 Práticas que Uso Para Me Aperfeiçoar Enquanto Pessoa Desenvolvedora Senior
+title: 5 Práticas que uso para me aperfeiçoar enquanto pessoa desenvolvedora Senior
 slug: 5-praticas-que-uso-para-me-aperfeicoar-enquanto-pessoa-desenvolvedora-senior
 date: 2024-03-29 20:02 -0300
 categories: Carreira
