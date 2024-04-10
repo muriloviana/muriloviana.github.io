@@ -24,7 +24,7 @@ Vamos começar pelo básico. Como o próprio nome da operação sugere, bitwise 
 
 Existem diversos operadores de bitwise, mas vamos abordar apenas dois deles com foco na resolução do quiz: **left shift** e **right shift**. A ideia dessas operações é mover os dígitos de um determinado conjunto de bits para direita ou para a esquerda. Simples assim!
 
-Vamos supor que temos o seguinte binário: '0b100111' ('0b' no começo é apenas uma representação binária informando que todo bit a esquerda é 0). Ao realizarmos left shift nele iremos mover os bits uma casa para a esquerda, adicionando um novo bit na à direita do binário. Esse novo bit será sempre 0 para essa operação, resultando em um novo binário.
+Vamos supor que temos o seguinte binário: '0b100111' ('0b' no começo é apenas uma representação binária informando que todo bit a esquerda é 0). Ao realizarmos left shift nele iremos mover os bits uma casa para a esquerda, adicionando um novo bit à direita do binário. Esse novo bit será sempre 0 para essa operação, resultando em um novo binário.
 
 <p style="text-align: center;">
     <img src="/assets/left-shift-example.png" alt="Binário 0 1 0 0 1 1 1 com setas apontando os bits movidos à esquerda resultando em 1 0 0 1 1 1 0" style="max-width: 500px">
@@ -47,9 +47,11 @@ Maravilha, agora que sabemos o que são os operadores de shift, vamos a sintaxe 
 '0b1001110'
 ```
 
-O primeiro elemento da operação é o número que queremos mover os bits (39), o operador '<<' representa left shift, e o segundo elemento (1) é a quantidade de bits que serão movidos na direção do operador (left << esquerda).
+O primeiro elemento da operação é o número que queremos mover os bits (39), o operador `<<` representa left shift, e o segundo elemento (1) é a quantidade de bits que serão movidos na direção do operador (left << esquerda).
 
-Calma lá, quer dizer então que podemos fazer mais de um shift ao mesmo tempo? Exatamente! Por exemplo:
+"*Calma lá, quer dizer então que podemos fazer mais de um shift ao mesmo tempo?*"
+
+Exatamente! Por exemplo:
 
 ```python
 >>> 39 << 2
