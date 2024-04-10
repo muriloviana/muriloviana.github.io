@@ -2,7 +2,7 @@
 layout: post
 title: Left e right shift, operadores de bitwise em Python
 slug: left-e-right-shift-operadores-de-bitwise-em-python
-date: 2024-04-09 09:35 -0300
+date: 2024-04-10 20:16 -0300
 categories: [Python, Programação]
 ---
 
@@ -84,6 +84,4 @@ Agora que os conceitos de left e right shift estão mais claros, ao retornar par
 
 Portanto, a resposta correta para o quiz é 1.
 
-E aí? Conseguiu acertar de primeira? Espero que agora você esteja mais familiarizado com esse tipo de operação. Comenta aqui caso queira saber mais sobre outras operações de bitwise e diferentes aplicações.
-
-
+E aí? Conseguiu acertar de primeira? Espero que agora você esteja mais familiarizado com esse tipo de operação.
