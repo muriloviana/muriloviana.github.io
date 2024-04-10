@@ -60,7 +60,7 @@ Exatamente! Por exemplo:
 '0b10011100'
 ```
 
-A mesma sintaxe se aplica para right shift: o primeiro elemento é o número que queremos mover os bits, o operador '>>' representa right shift, e o segundo elemento é a quantidade de bits que serão movidos na direção do operador (right >> direita).
+A mesma sintaxe se aplica para right shift: o primeiro elemento é o número que queremos mover os bits, o operador `>>` representa right shift, e o segundo elemento é a quantidade de bits que serão movidos na direção do operador (right >> direita).
 
 ```python
 >>> 39 >> 1
