@@ -82,6 +82,8 @@ Agora que os conceitos de left e right shift estão mais claros, ao retornar par
 ```python
 >>> 4 >> 2
 1
+>>> bin(1)
+'0b1'
 ```
 
 Portanto, a resposta correta para o quiz é 1.
