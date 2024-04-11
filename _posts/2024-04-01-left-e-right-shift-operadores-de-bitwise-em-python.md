@@ -49,7 +49,7 @@ Maravilha, agora que sabemos o que são os operadores de shift, vamos a sintaxe 
 
 O primeiro elemento da operação é o número que queremos mover os bits (39), o operador `<<` representa left shift, e o segundo elemento (1) é a quantidade de bits que serão movidos na direção do operador (left << esquerda).
 
-"*Calma lá, quer dizer então que podemos fazer mais de um shift ao mesmo tempo?*"
+*"Calma lá, quer dizer então que podemos fazer mais de um shift ao mesmo tempo?"*
 
 Exatamente! Por exemplo:
 
@@ -69,7 +69,7 @@ A mesma sintaxe se aplica para right shift: o primeiro elemento é o número que
 '0b10011'
 >>> 39 >> 2
 9
->>> bin(19)
+>>> bin(9)
 '0b1001'
 ```
 
